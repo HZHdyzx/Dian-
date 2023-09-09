@@ -1,0 +1,8 @@
+elevator 6
+10 5 
+
+
+格式为：
+elevator C
+A B
+表示电梯此时在C层，有一人要从第A层到第B层。
