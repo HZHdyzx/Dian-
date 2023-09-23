@@ -1,15 +1,15 @@
 #include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
 
 int move( int *h, int end, int *t) {
 
-	while (*h > end) {
-		*h = *h - 1;
+	while (*h != end) {
+		if (*h > end)
+			*h = *h - 1;
+		else *h = *h + 1;
 		*t = *t + 1;
 	}
-	while (*h < end) {
-		*h = *h + 1;
-		*t = *t + 1;
-	}
+
 	return 0;
 }
 

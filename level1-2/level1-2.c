@@ -33,7 +33,7 @@ int main() {
 	int high = C;
 	//输出初始状态
 	printf("楼层\t时间\t人数\n");
-	printf("%d\t%d\t%d\n", high, time, num);
+	printf("初始状态：\n%d\t%d\t%d\n开始运行：\n", high, time, num);
 	//模拟电梯去接乘客的过程
 	move(&high, A, &time);
 	num = num + 1;
@@ -42,7 +42,8 @@ int main() {
 	move(&high, B, &time);
 	num = num - 1;
 	printf("%d\t%d\t%d\n", high, time, num);
-end:
 
+	printf("运行结束");
+end:
 	return 0;
 }

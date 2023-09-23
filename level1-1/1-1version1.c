@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
 
 int main() {
 	//设置一些量及输入信息
